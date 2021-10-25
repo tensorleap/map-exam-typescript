@@ -4,6 +4,24 @@
   height: 100vh;
 }
 
+.top-bar {
+  display: flex;
+  align-items: center;
+  height: 150px;
+  overflow: hidden;
+  align-content: stretch;
+  padding: 10px
+}
+
+.react-json-view {
+  flex: 1;
+  max-height: 100%;
+  overflow: scroll;
+  margin-left: 10px;
+}
+
 .main {
   flex: 1;
+  overflow: scroll;
 }
+

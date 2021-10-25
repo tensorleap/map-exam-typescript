@@ -4,6 +4,7 @@ import {useCallback, useState} from 'react';
 import {EdgesAndVertices} from './types';
 import {generateData} from './data';
 import {Graph} from './Graph';
+import ReactJson from 'react-json-view'
 
 function App() {
   const {ref, width, height} = useResizeObserver()
@@ -18,8 +19,9 @@ function App() {
 
   return (
     <div className="app-container">
-      <div>
-        <button onClick={handleGenerateData}>generate data</button>
+      <div className='top-bar'>
+        <button className='generate-button' onClick={handleGenerateData}>generate data</button>
+        <ReactJson src={data || {}} />
       </div>
       <div className='main' ref={ref}>
         <Graph
