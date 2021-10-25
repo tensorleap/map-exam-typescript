@@ -1,7 +1,6 @@
 import './Graph.css'
-import {EdgesAndVertices} from "./types";
 
-export function Graph({edges, vertices}: EdgesAndVertices) {
+export function Graph({edges, vertices}) {
   return (
     <div className="graph-container">
       <h4>Vertices</h4>
