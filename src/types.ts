@@ -11,6 +11,6 @@ export interface Vertex {
 }
 
 export interface EdgesAndVertices {
-  edges: Edge[],
-  vertices: Vertex[],
+  edges: Edge[];
+  vertices: Vertex[];
 }
