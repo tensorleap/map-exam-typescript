@@ -13,7 +13,12 @@ function App() {
 
   const handleGenerateData = useCallback(() => {
     if (width && height) {
-      setData(generateData(width, height))
+      const data = generateData(width, height);
+      console.group("data");
+      console.log("Edges", data.edges);
+      console.log("Vertices", data.vertices);
+      console.groupEnd();
+      setData(data);
     }
   }, [width, height])
 
