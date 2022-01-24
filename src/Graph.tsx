@@ -4,6 +4,7 @@ import {EdgesAndVertices} from "./types";
 export function Graph({edges, vertices}: EdgesAndVertices) {
   return (
     <div className="graph-container">
+      { /* replace this code with you own */ }
       <h4>Vertices</h4>
       <pre>
         {JSON.stringify(vertices, null, 2)}
@@ -12,6 +13,7 @@ export function Graph({edges, vertices}: EdgesAndVertices) {
       <pre>
         {JSON.stringify(edges, null, 2)}
       </pre>
+      { /* ---------------------- */ }
     </div>
   )
 
