@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <div>
+      <div className="top-bar">
         <button onClick={handleGenerateData}>generate data</button>
       </div>
       <div className="main" ref={ref}>

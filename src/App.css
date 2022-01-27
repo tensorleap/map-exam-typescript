@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.top-bar {
+  padding: 10px
+}
+
 .main {
   flex: 1;
 }
